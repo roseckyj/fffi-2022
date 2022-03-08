@@ -77,8 +77,8 @@ export class Pipe extends React.Component<IPipeProps, IIPipePropsState> {
                 className="pipe"
                 style={{
                     top: props.y,
-                    width: props.size + "vw",
-                    height: props.size / 2 + "vw",
+                    width: `max(${props.size}vw, ${props.size}vh)`,
+                    height: `max(${props.size / 2}vw, ${props.size / 2}vh)`,
                     left: props.right ? undefined : 0,
                     right: props.right ? 0 : undefined,
                     transform: this.transform(),
