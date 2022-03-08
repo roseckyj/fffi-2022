@@ -83,8 +83,8 @@ export class Pipe extends React.Component<IPipeProps, IIPipePropsState> {
                     right: props.right ? 0 : undefined,
                     transform: this.transform(),
                     backgroundImage: props.right
-                        ? 'url("img/roura2.svg")'
-                        : 'url("img/roura1.svg")',
+                        ? 'url("img/roura2.png")'
+                        : 'url("img/roura1.png")',
                 }}
             />
         );
