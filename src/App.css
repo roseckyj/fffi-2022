@@ -31,7 +31,7 @@ body {
 .button-replace-me {
     margin-top: 2rem;
     padding: 0.6rem 1.5rem;
-    border: solid 2px currentColor;
+    border: solid 2px #e0e0e2;
     cursor: pointer;
 }
 
