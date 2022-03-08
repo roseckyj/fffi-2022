@@ -12,8 +12,8 @@ interface IIPipePropsState {
     y: number | null;
 }
 
-const ROTATION_SCALE = 30;
-const PARALAX_AMOUNT = 0.2;
+const ROTATION_SCALE = 60;
+const PARALAX_AMOUNT = -0.2;
 
 export class Pipe extends React.Component<IPipeProps, IIPipePropsState> {
     private ref = React.createRef<HTMLDivElement>();
@@ -50,12 +50,13 @@ export class Pipe extends React.Component<IPipeProps, IIPipePropsState> {
         let rotation = this.props.right ? 180 : 0;
 
         if (this.state.y !== null) {
-            const delta =
-                (this.state.y - this.state.scroll) / window.innerHeight;
-
-            rotation += delta * ROTATION_SCALE;
-
             shift += this.state.scroll * PARALAX_AMOUNT;
+
+            const delta =
+                (window.innerHeight / 2 - (this.state.y + shift)) /
+                window.innerHeight;
+
+            rotation += (this.props.right ? -1 : 1) * (delta * ROTATION_SCALE);
         }
 
         const translate = `translate(${this.props.right ? 35 : -35}%, -${
