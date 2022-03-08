@@ -25,11 +25,13 @@ export class Pipe extends React.Component<IPipeProps, IIPipePropsState> {
 
     componentDidMount() {
         window.addEventListener("scroll", () => this.update());
+        window.addEventListener("touchmove", () => this.update());
         this.update();
     }
 
     componentWillUnmount() {
         window.removeEventListener("scroll", () => this.update());
+        window.removeEventListener("touchmove", () => this.update());
     }
 
     update() {
