@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface IPipeProps {
-    y: string;
+    y: number;
     bottom?: true;
     size: number;
     right?: true;
@@ -76,7 +76,7 @@ export class Pipe extends React.Component<IPipeProps, IIPipePropsState> {
                 ref={this.ref}
                 className="pipe"
                 style={{
-                    top: props.y,
+                    top: `${props.y * 100}vh`,
                     width: `max(${props.size}vw, ${props.size}vh)`,
                     height: `max(${props.size / 2}vw, ${props.size / 2}vh)`,
                     left: props.right ? undefined : 0,
