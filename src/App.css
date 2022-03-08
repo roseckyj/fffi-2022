@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
 }
 
 .logo {
@@ -22,11 +21,16 @@ body {
     margin-bottom: min(2rem, 5vw);
 }
 
+.title {
+    text-transform: uppercase;
+    font-size: max(min(1.7rem, 4vw), 1.2rem);
+}
+
 .subtitle {
     text-transform: uppercase;
     margin-top: min(2rem, 5vw);
-    font-size: 0.7em;
     opacity: 0.6;
+    font-size: max(min(1.2rem, 3vw), 1rem);
 }
 
 .button-replace-me {
@@ -34,6 +38,7 @@ body {
     padding: 0.6rem 1.5rem;
     border: solid 2px #e0e0e2;
     cursor: pointer;
+    font-size: max(min(1.2rem, 3vw), 1rem);
 }
 
 .button-replace-me:hover {

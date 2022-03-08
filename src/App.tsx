@@ -18,12 +18,13 @@ function App() {
                     alt="22. Filmový Festival FI MU"
                     className="logo"
                 />
-                <div>20. 5. 2022 | 19:00</div>
+                <div className="title">20. 5. 2022 | 19:00</div>
                 <div className="subtitle">
                     přihlašování filmů možné do 19. 4. 2022
                 </div>
                 <div className="button-replace-me">Přihlásit se</div>
             </header>
+            {/* The whole body should be replaced with the content of the page... do not even keep the styles, it is just for preview */}
             <div className="body">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
