@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
+@import url("font/stylesheet.css");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    text-align: center;
+    font-family: "coolveticaregular", Helvetica, sans-serif;
+    background-color: #180b3e;
+    color: #e0e0e2;
+    overflow-x: hidden;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    width: 400px;
+    max-width: 50vw;
+    margin-bottom: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+    text-transform: uppercase;
+    margin-top: 4rem;
+    font-size: 0.8em;
+}
+
+.button-replace-me {
+    margin-top: 2rem;
+    padding: 0.6rem 1.5rem;
+    border: solid 2px currentColor;
+    cursor: pointer;
+}
+
+.button-replace-me:hover {
+    background-color: #e0e0e2;
+    color: #180b3e;
+}
+
+.body {
+    padding: 6rem;
+}
+
+.pipe {
+    position: absolute;
+    background-image: url("img/roura1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translate(-35%, -25%);
+    z-index: -1;
 }
