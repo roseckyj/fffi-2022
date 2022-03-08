@@ -6,8 +6,10 @@ import { Pipe } from "./Pipe";
 function App() {
     return (
         <div className="App">
-            <Pipe right={false} size={150} y="0vh" />
-            <Pipe right={false} size={100} y="100vh" bottom right />
+            <Pipe size={150} y="0vh" />
+            <Pipe size={100} y="100vh" bottom right />
+            <Pipe size={80} y="200vh" bottom />
+            <Pipe size={120} y="300vh" bottom right />
             <header className="App-header">
                 <img
                     src="/img/logo.png"
